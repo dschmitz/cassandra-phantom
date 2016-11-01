@@ -2,7 +2,7 @@ name := "cassandra-phantom"
 
 version := "1.0"
 
-scalaVersion := "2.11.7"
+scalaVersion := "2.11.8"
 
 resolvers ++= Seq(
   Resolver.sonatypeRepo("releases"),
@@ -21,20 +21,20 @@ resolvers ++= Seq(
 
 libraryDependencies ++= {
 
-  val akkaV = "2.4.4"
-  val phantomV = "1.22.0"
+  val akkaV = "2.4.12"
+  val phantomV = "1.29.5"
 
   Seq(
     "com.websudos"        %%  "phantom-dsl"                 % phantomV,
     "com.websudos"        %%  "phantom-reactivestreams"     % phantomV,
-    "com.websudos"        %%  "util-testing"                % "0.13.0"    % "test, provided",
-    "org.scalatest"       %%  "scalatest"                   % "2.2.4"     % "test",
+    "com.websudos"        %%  "util-testing"                % "0.17.0"    % "test, provided",
+    "org.scalatest"       %%  "scalatest"                   % "2.2.6"     % "test",
     "com.typesafe.akka"   %%  "akka-actor"                  % akkaV,
     "com.typesafe.akka"   %%  "akka-stream"                 % akkaV,
     "com.typesafe.akka"   %%  "akka-slf4j"                  % akkaV,
     "com.typesafe.akka"   %%  "akka-testkit"                % akkaV,
     "com.typesafe.akka"   %%  "akka-stream-testkit"         % akkaV,
-    "com.typesafe.play"   %%  "play-streams-experimental"   % "2.4.6"
+    "com.typesafe.play"   %%  "play-streams-experimental"   % "2.4.8"
   )
 }
 

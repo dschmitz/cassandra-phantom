@@ -2,7 +2,6 @@ package com.cassandra.phantom.modeling.database
 
 import com.cassandra.phantom.modeling.connector.Connector._
 import com.cassandra.phantom.modeling.model.{ConcreteSongsByArtistModel, ConcreteSongsModel}
-import com.websudos.phantom.db.DatabaseImpl
 import com.websudos.phantom.dsl._
 
 /**
@@ -13,7 +12,7 @@ import com.websudos.phantom.dsl._
   * for example: One for production and other for testing
   *
   */
-class SongsDatabase(override val connector: KeySpaceDef) extends DatabaseImpl(connector) {
+class SongsDatabase(override val connector: KeySpaceDef) extends Database[SongsDatabase](connector) {
   object songsModel extends ConcreteSongsModel with connector.Connector
   object songsByArtistsModel extends ConcreteSongsByArtistModel with connector.Connector
 }
