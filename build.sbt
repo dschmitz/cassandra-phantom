@@ -28,7 +28,7 @@ libraryDependencies ++= {
     "com.websudos"        %%  "phantom-dsl"                 % phantomV,
     "com.websudos"        %%  "phantom-reactivestreams"     % phantomV,
     "com.websudos"        %%  "util-testing"                % "0.17.0"    % "test, provided",
-    "org.scalatest"       %%  "scalatest"                   % "2.2.6"     % "test",
+    "org.scalatest"       %%  "scalatest"                   % "3.0.1"     % "test",
     "com.typesafe.akka"   %%  "akka-actor"                  % akkaV,
     "com.typesafe.akka"   %%  "akka-stream"                 % akkaV,
     "com.typesafe.akka"   %%  "akka-slf4j"                  % akkaV,
