@@ -21,7 +21,7 @@ resolvers ++= Seq(
 
 libraryDependencies ++= {
 
-  val akkaV = "2.4.12"
+  val akkaV = "2.4.14"
   val phantomV = "1.29.5"
 
   Seq(
